@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useParams, useRouter } from "next/navigation";
 import axios from "axios";
-import Title from "@/components/title.cmp";
-import TopBar from "@/components/top-bar.cmp";
+import Title from "@/app/components/title.cmp";
+import TopBar from "@/app/components/top-bar.cmp";
 import { FaEdit } from "react-icons/fa";
 import {
   Label,

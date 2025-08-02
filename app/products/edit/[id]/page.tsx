@@ -1,9 +1,9 @@
 "use client";
 
-import CreateProductForm from "@/components/create-product.cmp";
-import Title from "@/components/title.cmp";
-import TopBar from "@/components/top-bar.cmp";
-import EditProduct from "@/components/update-product.cmp";
+import CreateProductForm from "@/app/components/create-product.cmp";
+import Title from "@/app/components/title.cmp";
+import TopBar from "@/app/components/top-bar.cmp";
+import EditProduct from "@/app/components/update-product.cmp";
 import { FaCartPlus } from "react-icons/fa";
 
 const UpdateProduct = () => {

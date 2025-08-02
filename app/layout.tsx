@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/sidebar.cmp";
+import Sidebar from "@/app/components/sidebar.cmp";
 import { Toaster } from "react-hot-toast";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Providers } from "./poviders/providers";

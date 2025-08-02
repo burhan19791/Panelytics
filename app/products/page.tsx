@@ -1,8 +1,8 @@
 "use client";
 
-import { ProductsTable } from "@/components/products-table.cmp";
-import Title from "@/components/title.cmp";
-import TopBar from "@/components/top-bar.cmp";
+import { ProductsTable } from "@/app/components/products-table.cmp";
+import Title from "@/app/components/title.cmp";
+import TopBar from "@/app/components/top-bar.cmp";
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { TbLayoutDashboardFilled } from "react-icons/tb";
