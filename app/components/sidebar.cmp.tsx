@@ -38,9 +38,9 @@ export default function Sidebar() {
 
   return (
     <div className="h-screen bg-white px-2 md:px-8 py-4 flex flex-col w-16 md:w-64 transition-all">
-      <div>
-        <Image src={"/images/Logo"} alt="logo" height={30} width={30}/>
-      </div>
+        {/* <div>
+          <Image src={"/images/Logo"} alt="logo" height={30} width={30}/>
+        </div> */}
       <div className="text-2xl font-semibold mb-6 ml-1 hidden md:block mt-4">
         Panelytics
       </div>

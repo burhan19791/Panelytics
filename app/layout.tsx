@@ -4,10 +4,8 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/app/components/sidebar.cmp";
 import { Toaster } from "react-hot-toast";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Providers } from "./poviders/providers";
 
-// Import Outfit with multiple weights
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
@@ -21,9 +19,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={`${outfit.variable} font-outfit antialiased`}>
@@ -32,26 +30,25 @@ export default function RootLayout({
             <Sidebar />
           </div>
           <Providers>{children}</Providers>
-
           <Toaster
             position="top-right"
             toastOptions={{
               duration: 3000,
               style: {
-                background: "#1f2937", // dark gray
+                background: "#1f2937",
                 color: "#fff",
                 borderRadius: "0.5rem",
               },
               success: {
                 iconTheme: {
-                  primary: "#22c55e", // green-500
-                  secondary: "#dcfce7", // green-100
+                  primary: "#22c55e",
+                  secondary: "#dcfce7",
                 },
               },
               error: {
                 iconTheme: {
-                  primary: "#ef4444", // red-500
-                  secondary: "#fee2e2", // red-100
+                  primary: "#ef4444",
+                  secondary: "#fee2e2",
                 },
               },
             }}
